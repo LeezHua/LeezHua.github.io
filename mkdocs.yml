@@ -1,3 +1,109 @@
-site_name: My Docs
+# [Info]
+site_name: 李华 の 个人网站
+site_url: https://LeezHua.github.io
+site_autor: 李华
+site_description: 李华的个人网站
+
+# [Navigation]
+nav:
+  - 博客:
+    - BLOG/index.md
+  - 学习笔记:
+    - NOTES/index.md
+  - 开发:
+    - DEV/index.md
+  - 关于:
+    - ABOUT/index.md
+
+# [Ui]
 theme:
   name: material
+  logo: 'images/logo.png'
+  favicon: 'images/favicon.png'
+  language: zh
+
+  palette:
+      # 亮色
+    - media: "(prefers-color-scheme: light)"
+      primary: deep purple
+      accent: teal
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+      # 自动调节
+    - media: "(prefers-color-scheme)"
+      primary: deep purple
+      accent: teal
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+      # 暗色
+    - media: "(prefers-color-scheme: dark)"
+      primary: blue grey
+      accent: teal
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+      # 向下滚动时固定 tabs
+    # - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
+      # 只渲染可见的 HTML
+    # - navigation.prune
+    - navigation.top
+      # 搜索出的文章关键词加入高亮
+    - search.highlight
+
+  plugins:
+    - social
+    - search:
+      jieba_dict: dict.txt
+
+extra_javascript:
+  - javascripts/shortcuts.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/497802803
+      name: Bilibili | 你好我叫李华
+    - icon: fontawesome/brands/github
+      link: https://github.com/LeezHua
+      name: Github | LeezHua
+
+copyright: Copyright &copy; 2022 - 2022 李华
+
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
