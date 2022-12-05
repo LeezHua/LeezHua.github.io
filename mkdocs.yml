@@ -8,12 +8,24 @@ site_description: 李华的个人网站
 nav:
   - 博客:
     - BLOG/index.md
+    - Linux: 
+      - Linux: BLOG/Linux/index.md
+      - Git:
+        - 基本用法: BLOG/Linux/Git/Git-usage.md
+      - Ubuntu:
+        - Ubuntu22.04 基本配置: BLOG/Linux/Ubuntu/Ubuntu22.04-configuration.md
   - 学习笔记:
     - NOTES/index.md
+    - 操作系统:
+      - xv6:
+        - 文件系统[0]: NOTES/OS/Xv6/Filesystem/Filesystem_Hierachy.md
+        - 文件系统[1]: NOTES/OS/Xv6/Filesystem/high_level.md
+        - 文件系统[2]: NOTES/OS/Xv6/Filesystem/low_level.md
   - 开发:
     - DEV/index.md
   - 关于:
     - ABOUT/index.md
+    - 站点搭建: ABOUT/Site-build.md
 
 # [Ui]
 theme:
