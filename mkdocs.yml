@@ -21,6 +21,11 @@ nav:
         - 文件系统[0]: NOTES/OS/Xv6/Filesystem/Filesystem_Hierachy.md
         - 文件系统[1]: NOTES/OS/Xv6/Filesystem/high_level.md
         - 文件系统[2]: NOTES/OS/Xv6/Filesystem/low_level.md
+    
+    - rust:
+      - cargo: NOTES/rust/cargo.md
+      - 基础语法: NOTES/rust/Basic-syntax.md
+      - 所有权: NOTES/rust/Ownership.md
   - 开发:
     - DEV/index.md
   - 关于:
@@ -67,7 +72,7 @@ theme:
     - navigation.tabs
       # 向下滚动时固定 tabs
     # - navigation.tabs.sticky
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
       # 只渲染可见的 HTML
     # - navigation.prune
