@@ -23,9 +23,10 @@ nav:
         - 文件系统[2]: NOTES/OS/Xv6/Filesystem/low_level.md
     
     - rust:
-      - cargo: NOTES/rust/cargo.md
+      - cargo: NOTES/rust/Cargo.md
       - 基础语法: NOTES/rust/Basic-syntax.md
       - 所有权: NOTES/rust/Ownership.md
+      - 结构体: NOTES/rust/Structs.md
   - 开发:
     - DEV/index.md
   - 关于:
