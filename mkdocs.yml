@@ -27,6 +27,11 @@ nav:
       - 基础语法: NOTES/rust/Basic-syntax.md
       - 所有权: NOTES/rust/Ownership.md
       - 结构体: NOTES/rust/Structs.md
+      - 枚举: NOTES/rust/Enum.md
+      - 包、Crate 和模块: NOTES/rust/Packages-crates-modules.md
+      - 常见集合: NOTES/rust/Collections.md
+      - 错误处理: NOTES/rust/Error-handling.md
+  
   - 开发:
     - DEV/index.md
   - 关于:
