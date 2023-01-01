@@ -34,6 +34,10 @@ nav:
   
   - 开发:
     - DEV/index.md
+
+  - 英语:
+    - ENGLISH/index.md
+    - 语法框架概述: ENGLISH/English-system-summary.md
   - 关于:
     - ABOUT/index.md
     - 站点搭建: ABOUT/Site-build.md
