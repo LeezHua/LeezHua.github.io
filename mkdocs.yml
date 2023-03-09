@@ -1,7 +1,7 @@
 # [Info]
 site_name: 李华 の 个人网站
 site_url: https://LeezHua.github.io
-site_autor: 李华
+site_author: 李华
 site_description: 李华的个人网站
 
 # [Navigation]
@@ -34,6 +34,12 @@ nav:
   
   - 开发:
     - DEV/index.md
+    - rust-xv6:
+      - DEV/xv6-rust/index.md
+      - DEV/xv6-rust/23-1.md
+      - DEV/xv6-rust/23-2.md
+      - DEV/xv6-rust/23-3.md
+
 
   - 英语:
     - ENGLISH/index.md
@@ -85,10 +91,11 @@ theme:
     # - navigation.expand
     - navigation.indexes
       # 只渲染可见的 HTML
-    # - navigation.prune
+    - navigation.prune
     - navigation.top
       # 搜索出的文章关键词加入高亮
     - search.highlight
+    - content.code.copy
 
   plugins:
     - social
@@ -107,14 +114,19 @@ extra:
       link: https://github.com/LeezHua
       name: Github | LeezHua
 
-copyright: Copyright &copy; 2022 - 2022 李华
+copyright: Copyright &copy; 2022 - 2023 李华
 
+# [Extensions]
+plugins:
+  - search: # 现在还不支持中文搜索 支持之后可以设置语言
+    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
+      lang:
+        - en
+        - zh
+  - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: false
   - toc:
       permalink: true
   - footnotes
@@ -123,11 +135,20 @@ markdown_extensions:
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
+
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji
-  - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
