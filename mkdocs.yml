@@ -138,7 +138,6 @@ markdown_extensions:
 
   - pymdownx.highlight:
       linenums: true
-      anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
