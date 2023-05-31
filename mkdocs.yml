@@ -31,6 +31,11 @@ nav:
       - 包、Crate 和模块: NOTES/rust/Packages-crates-modules.md
       - 常见集合: NOTES/rust/Collections.md
       - 错误处理: NOTES/rust/Error-handling.md
+    
+    - 计算机组成原理: 
+      - NOTES/PCC/index.md
+      - 计算机系统概述: NOTES/PCC/1overview.md
+
   
   - 开发:
     - DEV/index.md
@@ -40,10 +45,6 @@ nav:
       - DEV/xv6-rust/23-2.md
       - DEV/xv6-rust/23-3.md
 
-
-  - 英语:
-    - ENGLISH/index.md
-    - 语法框架概述: ENGLISH/English-system-summary.md
   - 关于:
     - ABOUT/index.md
     - 站点搭建: ABOUT/Site-build.md
@@ -119,10 +120,6 @@ copyright: Copyright &copy; 2022 - 2023 李华
 # [Extensions]
 plugins:
   - search: # 现在还不支持中文搜索 支持之后可以设置语言
-    # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
-      lang:
-        - en
-        - zh
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 
 markdown_extensions:
@@ -137,7 +134,7 @@ markdown_extensions:
       smart_enable: all
 
   - pymdownx.highlight:
-      linenums: true
+      # linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
