@@ -14,6 +14,7 @@ nav:
         - 基本用法: BLOG/Linux/Git/Git-usage.md
       - Ubuntu:
         - Ubuntu22.04 基本配置: BLOG/Linux/Ubuntu/Ubuntu22.04-configuration.md
+        - WSL2下配置代理: BLOG/Linux/Ubuntu/Set-proxy-for-WSL2.md
   - 学习笔记:
     - NOTES/index.md
     - 操作系统:
